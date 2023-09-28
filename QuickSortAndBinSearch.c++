@@ -17,13 +17,13 @@ void output_vec(std::vector <int>& vec, int x) {
 
 void QuickSort(std::vector <int> &vec, int left, int right) {
 	int l = left, r = right;
-	int middle = vec[(left + right) / 2];
+	int pivot = vec[(left + right) / 2];
 
 	while (l <= r) {
-		while (vec[l] < middle) {
+		while (vec[l] < pivot) {
 			l++;
 		}
-		while (vec[r] > middle) {
+		while (vec[r] > pivot) {
 			r--;
 		}
 
